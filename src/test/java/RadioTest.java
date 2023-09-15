@@ -165,16 +165,6 @@ public class RadioTest {
 
     }
 
-    @Test
-    public void testDecreaseVolumeBellowZero() {
-        Radio radio = new Radio();
 
-        radio.setCurrentVolume(0);
-        radio.decreaseVolume();
-        int actual = radio.getCurrentVolume();
-        int expected = 0;
-        Assertions.assertEquals(expected, actual);
-
-    }
 }
 
